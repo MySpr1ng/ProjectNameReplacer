@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 public class NameReplacer {
 
-    // return file extension
+        // return file extension
     private static String getFileExtension(String fullName) {
 
         String fileName = new File(fullName).getName();
@@ -11,7 +11,7 @@ public class NameReplacer {
         return (dotIndex == -1) ? "" : fileName.substring(dotIndex + 1);
     }
 
-    // return validated user's input
+        // return validated user's input
     private static String getValidatedInputFilepath() {
 
         File currentFile;
@@ -40,7 +40,7 @@ public class NameReplacer {
 
         return inputString;
     }
-    //creates outputFile
+           //creates outputFile
     private  static String getOutputFilepath(String filepath) {
 
         File outputFile = new File(filepath);
